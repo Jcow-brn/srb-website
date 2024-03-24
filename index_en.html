@@ -2,23 +2,22 @@
 <html>
 
 <head>
-    <title>W3.CSS Template</title>
+    <title>Demo-website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/form.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <style>
         body,
         html {
             height: 100%;
-            font-family: "Verdana", sans-serif;
+            font-family: "Verdana";
         }
 
         .bgimg {
             background-position: center;
             background-size: cover;
-            background-image: url("/w3images/coffeehouse.jpg");
+            background-image: url("w3images/classroom1.webp");
             min-height: 75%;
         }
 
@@ -33,31 +32,38 @@
     <!-- Links (sit on top) -->
     <div class="w3-top">
         <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s3">
-                <a href="#about" class="w3-button w3-block w3-black ">ABOUT</a>
+            <div class="w3-col s4">
+                <a href="#about" class="w3-button w3-block w3-center">ABOUT</a>
             </div>
-            <div class="w3-col s3">
-                <a href="#menu" class="w3-button w3-block w3-black ">COURSES</a>
+            <div class="w3-col s4">
+                <a href="#menu" class="w3-button w3-block w3-center">CLASSES</a>
             </div>
-            <div class="w3-col s3">
-                <a href="#where" class="w3-button w3-block w3-black ">GET IN TOUCH</a>
-            </div>
-            <div class="w3-col s3">
-                <a href="/index.html" class="w3-button w3-block ">РУССКИЙ</a>
+            <div class="w3-col s4">
+                <a href="#where" class="w3-button w3-block w3-center">CONTACTS</a>
             </div>
         </div>
     </div>
 
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s12">
+            <a class="w3-button w3-black w3-center">filler</a>
+        </div>
+    </div>
     <!-- Header with image -->
     <header class="bgimg w3-display-container w3-grayscale-min" id="home">
         <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-            <span class="w3-tag">Open from 6am to 5pm</span>
+            <span class="w3-tag"></span>
         </div>
         <div class="w3-display-middle w3-center">
-            <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+            <span class="w3-text-white" style="font-size:60px">School<br>{title}</span>
         </div>
         <div class="w3-display-bottomright w3-center w3-padding-large">
-            <span class="w3-text-white">15 Adr street, 5015</span>
+            <span class="w3-text-white">Čelopečka 10, Beograd</span>
+        </div>
+        <div class="w3-display-topright w3-padding-large">
+            <span class="w3-text-white">
+                <a href="/index.html" class="w3-button w3-black">Русский</a>
+            </span>
         </div>
     </header>
 
@@ -67,20 +73,20 @@
         <!-- About Container -->
         <div class="w3-container" id="about">
             <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE CAFE</span></h5>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch
-                    sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is
-                            the new sweet.</i></p>
-                    <p>Chef, Coffeeist and Owner: Liam Brown</p>
+                    <p><i>an impressive quote about teaching</i></p>
+                    <p>- Quote author</p>
                 </div>
-                <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-                <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-                <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+                <img src="w3images/class1_soft_censored.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Classes are happening: </strong> on these days at this time</p>
+                <p><strong>Address: </strong>Čelopečka 10, Beograd</p>
             </div>
         </div>
 
@@ -88,68 +94,71 @@
         <div class="w3-container" id="menu">
             <div class="w3-content" style="max-width:700px">
 
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Courses</span></h5>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CLASSES</span></h5>
 
                 <div class="w3-row w3-center w3-card w3-padding">
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-                        <div class="w3-col s6 tablink">Serbian</div>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu1');" id="myLink">
+                        <div class="w3-col s4 tablink">Serbian</div>
                     </a>
-                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-                        <div class="w3-col s6 tablink">Russian</div>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu2');">
+                        <div class="w3-col s4 tablink">Speaking group</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu3');">
+                        <div class="w3-col s4 tablink">English(WIP)</div>
                     </a>
                 </div>
 
-                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Bread Basket</h5>
-                    <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                <div id="Menu1" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Serbian language from zero to (x) - adults </h5>
+                    <p class="w3-text-grey">Class every (day of the week) from (time) to (time)<br>
+                        class is led by (y) and follows the (z) programme, price is (n)</p>
+                    <br>
+                    <h5>Serbian language from zero to (x) - kids </h5>
+                    <p class="w3-text-grey">Class every (day of the week) from (time) to (time)<br>
+                        class is led by (y) and follows the (z) programme, price is (n)</p>
+                    <br>
+                </div>
 
-                    <h5>Honey Almond Granola with Fruits</h5>
-                    <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                <div id="Menu2" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Serbian language speaking club</h5>
+                    <p class="w3-text-grey">The club gathers every 2 weeks in a more relaxed atmosphere than regular classes, with snacks and serbian guests.<br>
+                        The duration is usually 3 hours, we try to only speak serbian during the session. (beginners need not worry, they are still welcome - even with only the words they currently know it is still good practice as long as they are engaged and having a good time)<br>
+                        Each session has a specific topic, you will get some questions in advance so you can prepare.<br>
+                        For all students (and their parents) the club is fully free, for new people - first visit free, then same rate as one regular class in a group.</p>
                     <br>
 
-                    <h5>Belgian Waffle</h5>
-                    <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
-
-                    <h5>Scrambled eggs</h5>
-                    <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                    <br>
-
-                    <h5>Blueberry Pancakes</h5>
-                    <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
                 </div>
 
-                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-                    <h5>Coffee</h5>
-                    <p class="w3-text-grey">Regular coffee 2.50</p><br>
+                <div id="Menu3" class="w3-container menu w3-padding-48 w3-card">
+                    <p class="w3-text-grey">The English course is being worked on.</p><br>
 
-                    <h5>Chocolato</h5>
-                    <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
-
-                    <h5>Corretto</h5>
-                    <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
-
-                    <h5>Iced tea</h5>
-                    <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
-
-                    <h5>Soda</h5>
-                    <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
                 </div>
-                <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+                <img src="w3images/class2_stock.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
             </div>
         </div>
 
         <!-- Contact/Area Container -->
         <div class="w3-container" id="where" style="padding-bottom:32px;">
             <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-                <p>Find us at some address at some place.</p>
-                <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-                <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We
-                    understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both
-                    look and taste.</p>
-                <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-                <a id="formBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true" onclick="toggleIframe();" target="myiFrame">Click here to sign up!</a>
-                <iframe name="myiFrame" hidden = "true" src="about:blank" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GET IN TOUCH</span></h5>
+                <span class="w3-tag">Location</span>
+                <p>We are located in cenral Belgrade, address - Čelopečka 10</p>
+                <p>first floor, (exact directions) </p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6952703405113!2d20.480044769670943!3d44.8056499497075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9eccbf8f17%3A0x1a92d7d72d92297a!2s%C4%8Celope%C4%8Dka%2010%2C%20Beograd%2011050!5e0!3m2!1sen!2srs!4v1711216333085!5m2!1sen!2srs"
+                    width="100%" height="450" style="border:0; padding-bottom: 40px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <span class="w3-tag">Contacts</span>
+
+                <p>phone: 1111111111111</p>
+                <p>telegram: @example</p>
+                <a id="formBtn"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
+                    onclick="toggleIframe();" target="myiFrame">Click here to sign up</a>
+                <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="930" frameborder="0"
+                    marginheight="0" marginwidth="0">Loading…</iframe>
 
             </div>
         </div>
@@ -188,7 +197,7 @@
                 document.getElementById("formBtn").textContent = "Close form"
             } else {
                 iframe.style.display = "none";
-                document.getElementById("formBtn").textContent = "Click here to sign up!"
+                document.getElementById("formBtn").textContent = "Click here to sign up"
 
             }
         }
