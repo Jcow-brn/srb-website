@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Демо-сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/form.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Verdana";
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/w3images/classroom1.webp");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s4">
+                <a href="#about" class="w3-button w3-block w3-center">О НАС</a>
+            </div>
+            <div class="w3-col s4">
+                <a href="#menu" class="w3-button w3-block w3-center">КУРСЫ</a>
+            </div>
+            <div class="w3-col s4">
+                <a href="#where" class="w3-button w3-block w3-center">КОНТАКТЫ</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row w3-padding w3-black">
+        <div class="w3-col s12">
+            <a class="w3-button w3-black w3-center">filler</a>
+        </div>
+    </div>
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag"></span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:60px">Школа<br>{Название}</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Čelopečka 10, Beograd</span>
+        </div>
+        <div class="w3-display-topright w3-padding-large">
+            <span class="w3-text-white">
+                <a href="/index_en.html" class="w3-button w3-black">ENGLISH</a>
+            </span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">О ШКОЛЕ</span></h5>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>Умная циатата о том как правильно преподавать</i></p>
+                    <p>- Автор цитаты</p>
+                </div>
+                <img src="/w3images/class1_soft_censored.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Время занятий: </strong>по таким-то дням в такое-то время</p>
+                <p><strong>Адрес: </strong>Čelopečka 10, Beograd</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ЗАНЯТИЯ</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu1');" id="myLink">
+                        <div class="w3-col s4 tablink">Сербский</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu2');">
+                        <div class="w3-col s4 tablink">Разговорный клуб</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Menu3');">
+                        <div class="w3-col s4 tablink">Английский(WIP)</div>
+                    </a>
+                </div>
+
+                <div id="Menu1" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Сербский язык с нуля до уровня (x) - Взрослые </h5>
+                    <p class="w3-text-grey">Занятия по (дням недели) с (время) до (время). <br>
+                        Занятия ведет (y) по программе (z), стоимость занятий (n)</p>
+                    <br>
+                    <h5>Сербский язык с нуля до уровня (x) - Дети</h5>
+                    <p class="w3-text-grey">Занятия по (дням недели) с (время) до (время). <br>
+                        Занятия ведет (y) по программе (z), стоимость занятий (n)</p>
+                    <br>
+                </div>
+
+                <div id="Menu2" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Разговорный клуб сербского языка</h5>
+                    <p class="w3-text-grey">Клуб проходит раз в 2 недели, в более расслабленной атмосфере, чем урок (с бокалом вина и с сербскими гостями).<br>
+                        Клуб длится обычно 3 часа, все время пытаемся говорить на сербском (те, которые только что начинают учиться могут не бояться и свободно приходить, используя только те слова, которые знают, это просто хороший тренинг и прежде всего важно, чтобы вам было увлекательно и забавно). <br>
+                        Каждый клуб имеет свою тему и для каждого вы получаете вопросы, которые можете заранее прочитать и к ним подготовиться. <br>
+                        Для всех моих учеников (и родителей моих учеников) клуб полностью бесплатен, для новичков, которые учатся в других местах - первое посещение бесплатное, потом, если хочется регулярно посещать, можно оплачивать как за один урок в группе.</p>
+                    <br>
+
+                </div>
+
+                <div id="Menu3" class="w3-container menu w3-padding-48 w3-card">
+                    <p class="w3-text-grey">Курс английского языка в разработке</p><br>
+
+                </div>
+                <img src="/w3images/class2_stock.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">КАК С НАМИ СВЯЗАТЬСЯ</span></h5>
+                <span class="w3-tag">Место</span>
+                <p>Мы располагаемся в центре Белграда, адрес - Čelopečka 10</p>
+                <p>первый этаж, (точные инструкции как войти) </p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6952703405113!2d20.480044769670943!3d44.8056499497075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9eccbf8f17%3A0x1a92d7d72d92297a!2s%C4%8Celope%C4%8Dka%2010%2C%20Beograd%2011050!5e0!3m2!1sen!2srs!4v1711216333085!5m2!1sen!2srs"
+                    width="100%" height="450" style="border:0; padding-bottom: 40px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <span class="w3-tag">Контакты</span>
+
+                <p>телефон: 1111111111111</p>
+                <p>телеграм: @example</p>
+                <a id="formBtn"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
+                    onclick="toggleIframe();" target="myiFrame">Нажмите чтобы записаться на занятия</a>
+                <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="930" frameborder="0"
+                    marginheight="0" marginwidth="0">Loading…</iframe>
+
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+
+        //iframe visibility toggler
+        function toggleIframe() {
+            iframe = document.getElementsByName("myiFrame")[0];
+            if (iframe.style.display != "block") {
+                iframe.style.display = "block";
+                document.getElementById("formBtn").textContent = "Закрыть форму"
+            } else {
+                iframe.style.display = "none";
+                document.getElementById("formBtn").textContent = "Нажмите чтобы записаться на занятия"
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
