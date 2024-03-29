@@ -1,1 +1,1 @@
-this is a sample language school webs
+this is a sample language school website

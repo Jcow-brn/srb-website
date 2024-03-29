@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>Demo-website</title>
+    <title>Демо-сайт</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/w3.css">
     <link rel="stylesheet" href="/form.css">
     <style>
         body,
@@ -16,9 +16,11 @@
 
         .bgimg {
             background-position: center;
-            background-size: cover;
-            background-image: url("w3images/classroom1.webp");
-            min-height: 75%;
+            background-color: #9a9cac;
+            background-size: contain;
+            background-image: url("w3images/logo_svg_smaller.svg");
+            min-height: 60%;
+            background-repeat: no-repeat;
         }
 
         .menu {
@@ -28,73 +30,77 @@
 </head>
 
 <body>
-
-    <!-- Links (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-row w3-padding w3-black">
-            <div class="w3-col s4">
-                <a href="#about" class="w3-button w3-block w3-center">ABOUT</a>
-            </div>
-            <div class="w3-col s4">
-                <a href="#menu" class="w3-button w3-block w3-center">CLASSES</a>
-            </div>
-            <div class="w3-col s4">
-                <a href="#where" class="w3-button w3-block w3-center">CONTACTS</a>
-            </div>
-        </div>
+    <!-- adaptive padding for fixed navbar -->
+    <div class="w3-row w3-padding">
+        <div class="w3-col m6 s12"><a class="w3-button w3-block w3-center">...</a></div>
+        <div class="w3-col m6 s12"><a class="w3-button w3-block w3-center">...</a></div>
     </div>
-
-    <div class="w3-row w3-padding w3-black">
-        <div class="w3-col s12">
-            <a class="w3-button w3-black w3-center">filler</a>
+    <!-- Links (sit on top) -->
+    <div class="w3-top" id="toplinks">
+        <div class="w3-row w3-padding local-grey w3-border-bottom w3-border-black">
+            <div class="w3-col m3 s6">
+                <a href="#about" class="w3-button yellow-button w3-block w3-center">ABOUT</a>
+            </div>
+            <div class="w3-col m3 s6">
+                <a href="#courses" class="w3-button yellow-button w3-block w3-center">CLASSES</a>
+            </div>
+            <div class="w3-col m3 s6">
+                <a href="#events" class="w3-button yellow-button w3-block w3-center">EVENTS</a>
+            </div>
+            <div class="w3-col m3 s6">
+                <a href="#where" class="w3-button yellow-button w3-block w3-center">CONTACTS</a>
+            </div>
         </div>
     </div>
     <!-- Header with image -->
-    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-            <span class="w3-tag"></span>
-        </div>
-        <div class="w3-display-middle w3-center">
-            <span class="w3-text-white" style="font-size:60px">School<br>{title}</span>
-        </div>
-        <div class="w3-display-bottomright w3-center w3-padding-large">
-            <span class="w3-text-white">Čelopečka 10, Beograd</span>
-        </div>
-        <div class="w3-display-topright w3-padding-large">
-            <span class="w3-text-white">
-                <a href="index.html" class="w3-button w3-black">Русский</a>
-            </span>
-        </div>
+    <header class="bgimg w3-display-container breaks-on-dark" id="home">
+        <a class="w3-display-topright w3-grayscale-min w3-padding-large" href="index.html"><img
+                src="w3images/RF_flag.png" alt="russian" height="30px" width="60px"></a>
+
     </header>
+    <script>
+        //this script ensures the internal links account for the fixed topbar, optional
+        document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
+        document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
+
+        //console.log(document.getElementById('toplinks').offsetHeight + 'px');
+        //console.log(window.getComputedStyle(document.documentElement).scrollPaddingTop);
+    </script>
 
     <!-- Add a background color and large text to the whole page -->
-    <div class="w3-sand w3-grayscale w3-large">
+    <div class="local-grey w3-large">
 
         <!-- About Container -->
+
         <div class="w3-container" id="about">
             <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+                <p class="w3-center">
+                    <img src="w3images/logo_svg_textonly.svg">
+                </p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="w3-panel w3-leftbar w3-light-grey">
-                    <p><i>an impressive quote about teaching</i></p>
-                    <p>- Quote author</p>
+                <div class=" w3-margin-top w3-content w3-display-container">
+                    <img class="mySlides" src="w3images/photo1bw.jpg" style = "max-width: 100%; max-height:100">
+                    <img class="mySlides" src="w3images/photo2bw.jpg" style = "max-width: 100%; max-height:100">
+                    <img class="mySlides" src="w3images/photo5bw.jpg" style = "max-width: 100%; max-height:100">
+                    <img class="mySlides" src="w3images/photo4bw.jpg" style = "max-width: 100%; max-height:100">
+                    <button class="w3-button  w3-yellow w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-yellow w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
                 </div>
-                <img src="w3images/class1_soft_censored.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
                 <p><strong>Classes are happening: </strong> on these days at this time</p>
                 <p><strong>Address: </strong>Čelopečka 10, Beograd</p>
             </div>
         </div>
 
-        <!-- Menu Container -->
-        <div class="w3-container" id="menu">
+        <!-- Courses Container -->
+        <div class="w3-container" id="courses">
             <div class="w3-content" style="max-width:700px">
 
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CLASSES</span></h5>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">CLASSES</span></h5>
 
                 <div class="w3-row w3-center w3-card w3-padding">
                     <a href="javascript:void(0)" onclick="openMenu(event, 'Menu1');" id="myLink">
@@ -104,7 +110,7 @@
                         <div class="w3-col s4 tablink">Speaking group</div>
                     </a>
                     <a href="javascript:void(0)" onclick="openMenu(event, 'Menu3');">
-                        <div class="w3-col s4 tablink">English(WIP)</div>
+                        <div class="w3-col s4 tablink">English</div>
                     </a>
                 </div>
 
@@ -131,17 +137,54 @@
 
                 <div id="Menu3" class="w3-container menu w3-padding-48 w3-card">
                     <p class="w3-text-grey">The English course is being worked on.</p><br>
-
                 </div>
-                <img src="w3images/class2_stock.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+                <img src="w3images/table_snacks.jpg" class="w3-grayscale" style="width:100%;max-width:1000px;margin-top:32px;">
             </div>
+        </div>
+
+        <!-- Events area -->
+        <div class="w3-container" id="events">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">EVENTS</span></h5>
+            <div class="w3-content">
+                    <p>
+                        lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>
+                        We regularly host interesting people and organise gatherings of all kinds. Here you can find out about upcoming events or browse the previous ones.
+                    </p>
+            <div class="w3-container">
+                <div class="w3-twothird w3-container w3-border w3-border-black">
+                    <h2>Event</h2>
+                    <p>
+                        29 march 19:00 - (person) is visiting us and we will be talking about X and doing Y.
+                    </p>
+                    <img src="w3images/placeholder.jpg" alt="event image" style="height: min-content;" class="w3-margin">
+                  </div>
+                  <div class="w3-third w3-container">
+                    <img src="w3images/fakecalendar.jpg" alt="calendar">
+                  </div>
+            </div>
+
         </div>
 
         <!-- Contact/Area Container -->
         <div class="w3-container" id="where" style="padding-bottom:32px;">
             <div class="w3-content" style="max-width:700px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GET IN TOUCH</span></h5>
-                <span class="w3-tag">Location</span>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">GET IN TOUCH</span></h5>
+                <span class="w3-tag w3-yellow">Contacts</span>
+
+                <p>phone: 1111111111111</p>
+                <p>telegram: @example</p>
+                <a id="formBtn"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
+                    onclick="toggleIframe();" target="myiFrame">Click here to sign up</a>
+                <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="1100" frameborder="0"
+                    marginheight="0" marginwidth="0">Loading…</iframe><br>
+                
+
+                <p class="w3-tag w3-yellow">Location</p>
                 <p>We are located in cenral Belgrade, address - Čelopečka 10</p>
                 <p>first floor, (exact directions) </p>
 
@@ -150,15 +193,6 @@
                     width="100%" height="450" style="border:0; padding-bottom: 40px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <span class="w3-tag">Contacts</span>
-
-                <p>phone: 1111111111111</p>
-                <p>telegram: @example</p>
-                <a id="formBtn"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
-                    onclick="toggleIframe();" target="myiFrame">Click here to sign up</a>
-                <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="930" frameborder="0"
-                    marginheight="0" marginwidth="0">Loading…</iframe>
 
             </div>
         </div>
@@ -167,7 +201,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <footer class="w3-center local-grey w3-padding-24 w3-small">
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
                 class="w3-hover-text-green">w3.css</a></p>
     </footer>
@@ -194,13 +228,31 @@
             iframe = document.getElementsByName("myiFrame")[0];
             if (iframe.style.display != "block") {
                 iframe.style.display = "block";
-                document.getElementById("formBtn").textContent = "Close form"
+                document.getElementById("formBtn").textContent = "Закрыть форму"
             } else {
                 iframe.style.display = "none";
-                document.getElementById("formBtn").textContent = "Click here to sign up"
+                document.getElementById("formBtn").textContent = "Нажмите чтобы записаться на занятия"
 
             }
         }
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length} ;
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
     </script>
 
 </body>

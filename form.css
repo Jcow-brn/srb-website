@@ -1,5 +1,35 @@
+.local-grey {
+    background-color: #9a9cacff;
+}
+
+
 iframe {
     body {
-        overflow:hidden;
+        overflow: clip;
     }
-  }
+}
+
+
+html {
+    scroll-padding-top: 55px;
+}
+
+@media (hover: hover) {
+    .w3-button:hover {
+        background-color: #ffff00 !important;
+    }
+}
+
+@media (hover: none) {
+    .w3-button:hover {
+        background-color: #9a9cacff !important;
+    }
+}
+
+.breaks-on-dark {
+    color-scheme: only light;
+}
+
+.pic-button button{
+    color: #f60000 !important;
+}
