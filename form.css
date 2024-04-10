@@ -24,12 +24,12 @@ html {
     .w3-button:hover {
         background-color: #9a9cacff !important;
     }
+    .w3-button.pic-button {
+        background-color: #ffff00 !important;
+
+    }
 }
 
 .breaks-on-dark {
     color-scheme: only light;
-}
-
-.pic-button button{
-    color: #f60000 !important;
 }
