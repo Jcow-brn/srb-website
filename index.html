@@ -36,8 +36,45 @@
             border-radius: 3px;
             border-style: solid;
         }
+
         div.no-bottom-border {
             border-bottom: 0px;
+        }
+
+        table {
+            overflow: auto;
+            width: 100%;
+            max-width: fit-content;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            border-spacing: 0;
+        }
+
+        tbody {
+            white-space: nowrap;
+        }
+
+        th,
+        td {
+            border-top-width: 0;
+            border-left-width: 0;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            vertical-align: bottom;
+        }
+
+        th:last-child,
+        td:last-child {
+            border-right-width: 0;
+        }
+
+        tr:last-child td {
+            border-bottom-width: 0;
         }
     </style>
 </head>
@@ -93,30 +130,34 @@
                     <img src="w3images/logo_svg_textonly.svg" style="max-width:100%">
                 </p>
                 <div class="border-yellow no-bottom-border w3-padding">
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Культурный центр «Эмигрантка» это негосударственное учреждение, организующее культурные мероприятия в сфере искусства и образования. Центр расположен в нескольких шагах от памятника Вуку Караджичу в парке основателей кириллицы Кирилла и Мефодия, недалеко от здания русского архитектора Н. Краснова,
+                         на улице Челопечка 10, в красивом и современном здании. Современный интерьер и историческая часть города (популярное белградское «кольцо двойки») образно передают принцип, по которому центр старается работать – синтез старого и нового, локального и мирового. 
+                        </p>
+                        <p>
+                        В «Эмигрантке» проходят курсы, лекции, разговорный клуб, публичные чтения и театральные мероприятия, показы фильмов, выставки и мастерские на разных языках. 
+                        Основателем центра является сербка Миляна Чосич, театральный режиссер и филолог, человек с двойным образованием, закончивший магистратуру и аспирантуру в Москве. 
+                        Понимая прекрасно позицию «ни туда, ни сюда», ощущая на собственном примере стих И. Бродского «не жилец этих мест, не мертвец, а какой-то посредник», культурный центр дает понятию эмигрант более широкое, образное значение.
+                        Исходя из этого, программа центра отличается разнообразностью и желанием объединить иностранную аудиторию с местным, сербским зрителем ради взаимного культурного обогащения. 
+                    </p>
                     <div class=" w3-margin-top w3-content w3-display-container">
                         <img class="mySlides" src="w3images/photo1bw.jpg" style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/photo1cl.jpg" style="max-width: 100%; max-height:100">
+                        
 
                         <img class="mySlides" src="w3images/photo2bw.jpg" style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/photo6cl.jpg" style="max-width: 100%; max-height:100">
+                        
 
                         <img class="mySlides" src="w3images/photo5bw.jpg" style="max-width: 100%; max-height:100">
                         <img class="mySlides" src="w3images/photo4bw.jpg" style="max-width: 100%; max-height:100">
+                        <!--<img class="mySlides" src="w3images/photo1cl.jpg" style="max-width: 100%; max-height:100">
+                        <img class="mySlides" src="w3images/photo6cl.jpg" style="max-width: 100%; max-height:100">
+                        -->
                         <button class="w3-button w3-yellow pic-button w3-display-left"
                             onclick="plusDivs(-1)">&#10094;</button>
                         <button class="w3-button w3-yellow pic-button w3-display-right"
                             onclick="plusDivs(+1)">&#10095;</button>
                     </div>
 
-                    <p><strong>Время занятий: </strong>по таким-то дням в такое-то время</p>
+                    <!--<p><strong>Время занятий: </strong>по таким-то дням в такое-то время</p>-->
                     <p><strong>Адрес: </strong>Čelopečka 10, Beograd</p>
                 </div>
             </div>
@@ -133,57 +174,174 @@
                     <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu1');" id="myLink">
                         <div class="tablink">Сербский</div>
                     </a>
-                    <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu2');">
+                    <a class="w3-bar-item" id="speakerGroup" href="javascript:void(0)" onclick="openMenu(event, 'Menu2');">
                         <div class="tablink">Разговорный клуб</div>
                     </a>
                     <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu3');">
                         <div class="tablink">Английский</div>
                     </a>
                 </div>
-                <div class="w3-twothird w3-container" style="min-height: 690px;">
+                <!--style="min-height: 690px;"-->
+                <div class="w3-twothird w3-container">
 
 
-                    <div id="Menu1" class="w3-container menu w3-padding-48 w3-card lighter-background" style="text-align: center;">
-                        <h5>Сербский язык с нуля до уровня (x) - Взрослые </h5>
-                        <p class="w3-text-black" style="text-align: center;">Занятия по (дням недели) с (время) до (время). <br>
-                            Занятия ведет (y) по программе (z), стоимость занятий (n)</p>
-                        <br>
-                        <h5>Сербский язык с нуля до уровня (x) - Дети</h5>
-                        <p class="w3-text-black" style="text-align: center;">Занятия по (дням недели) с (время) до (время). <br>
-                            Занятия ведет (y) по программе (z), стоимость занятий (n)</p>
-                        <br>
+                    <div id="Menu1" class="menu  lighter-background">
+                        <div class="w3-container w3-padding-48 w3-card" style="text-align: center;">
+                            <h5>Курсы сербского языка</h5>
+                            <p class="w3-text-black" style="text-align: center;">
+                                Курсы ведут носители языка, русскоговорящие филологи. Занятия проходят в целом очно, но есть и возможность онлайн формата, в группе или индивидуально. Урок длится 60 минут, 2 раза в неделю, весь материал ученики получают в электронном виде.
+                                После каждого занятия есть домашка, система преподавания направлена прежде всего на развитие разговорной составляющей с большим упором на базовую грамматику. В группе бывает около 5-6 человек. <br>
+                                Одно занятие в группе стоит 10 евро с человека, индивидуальный урок стоит 25 евро.
+                                В цену входит тематический <a href="javascript:void(0)" onclick="clickSpeakerGroup();">разговорный клуб</a>, который организуется раз в 2 недели в пространстве Культурного центра.
+                            </p>
+                        </div>
+                        <script> function clickSpeakerGroup() {
+                        document.getElementById("speakerGroup").click();
+                        }</script>
                     </div>
 
                     <div id="Menu2" class="w3-container menu w3-padding-48 w3-card lighter-background">
                         <h5 style="text-align: center;">Разговорный клуб сербского языка</h5>
-                        <p class="w3-text-black" style="text-align: center;">Клуб проходит раз в 2 недели, в более расслабленной атмосфере, чем
-                            урок (с
-                            бокалом вина и с сербскими гостями).<br>
-                            Клуб длится обычно 3 часа, все время пытаемся говорить на сербском (те, которые только
-                            что
-                            начинают учиться могут не бояться и свободно приходить, используя только те слова,
-                            которые
-                            знают, это просто хороший тренинг и прежде всего важно, чтобы вам было увлекательно и
-                            забавно).
-                            <br>
-                            Каждый клуб имеет свою тему и для каждого вы получаете вопросы, которые можете заранее
-                            прочитать
-                            и к ним подготовиться. <br>
-                            Для всех моих учеников (и родителей моих учеников) клуб полностью бесплатен, для
-                            новичков,
-                            которые учатся в других местах - первое посещение бесплатное, потом, если хочется
-                            регулярно
-                            посещать, можно оплачивать как за один урок в группе.
+                        <p class="w3-text-black" style="text-align: center;">Тематический сербский разговорный клуб проходит очно, раз в 2 недели, в помещениях культурного центра Эмигрантка, в более расслабленной атмосфере, чем урок (с бокалом вина и с сербскими гостями). 
+                            Клуб длится обычно 3 часа, все время пытаемся говорить на сербском (те, которые только что начинают учиться могут не бояться и свободно приходить, используя только те слова, которые знают, это просто хороший тренинг и прежде всего важно, чтобы вам было увлекательно).
+                            Каждый клуб имеет свою тему и для каждого вы получаете вопросы, которые можете заранее прочитать и к ним подготовиться. <br> Для всех учеников КЦ Эмигрантка клуб полностью бесплатен, для новичков - первое посещение бесплатное, потом, если хочется регулярно посещать, можно оплачивать как за один урок в группе. Те у которых маленькие дети - можно с ними приходить, есть отдельная комната в которой дети могут рисовать пока мы общаемся. Также, можно приходить с своими питомцами, если у них нет желания драться с другими питомцами). Клуб делает упор на разговор (на разные социально интересные и важные темы, от таких как "Что посетить в Сербии?", "Менталитет", "Еда" до таких как "Китч", "Соц.сети" и другие). 
+                            Также включает в себя культурные мероприятия такие как театральные чтения, совместное посещение кино/выставок, лекции и другое.
                         </p>
                         <br>
-
                     </div>
 
                     <div id="Menu3" class="w3-container menu w3-padding-48 w3-card lighter-background">
                         <p class="w3-text-grey">Курс английского языка в разработке</p><br>
                     </div>
                 </div>
-
+                <br>
+                <div><a class="w3-center" style="display: block;" href="javascript:void(0)" id="scheduleBtn"
+                        onclick="toggleSchedule();">Нажмите чтобы показать
+                        расписание</a></div>
+                <table id="schedule" class="w3-padding" hidden>
+                    <tbody>
+                        <tr style="font-weight: bold; background-color: #ffff00;">
+                            <td>группа:</td>
+                            <td>Пн</td>
+                            <td>Вт</td>
+                            <td>Ср</td>
+                            <td>Чт</td>
+                            <td>Пт</td>
+                            <td>Сб</td>
+                            <td>Вс</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>A1 (очно)</td>
+                            <td>16:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>13:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #ffffff">
+                            <td>A1+ a (очно)</td>
+                            <td>&nbsp;</td>
+                            <td>13:30</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>13:30</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>A1+ b (очно)</td>
+                            <td>&nbsp;</td>
+                            <td>19:30</td>
+                            <td>&nbsp;</td>
+                            <td>19:30</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #ffffff">
+                            <td>A2 a (очно/онлайн)</td>
+                            <td>&nbsp;</td>
+                            <td>12:00</td>
+                            <td>&nbsp;</td>
+                            <td>12:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>A2 b (онлайн)</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>12:00</td>
+                            <td>&nbsp;</td>
+                            <td>12:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #ffffff">
+                            <td>B1 (очно/онлайн)</td>
+                            <td>&nbsp;</td>
+                            <td>17:30</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>B2/C1 a (очно)</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>19:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #ffffff">
+                            <td>B2/C1 b (онлайн)</td>
+                            <td>17:00</td>
+                            <td>&nbsp;</td>
+                            <td>17:00</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>дети (11-12) a (очно)</td>
+                            <td>19:15</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>19:45</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #ffffff">
+                            <td>дети (11-12) b (онлайн)</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>13:00</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr style="background-color: #f0f0f0">
+                            <td>подростки (13-15) (очно)</td>
+                            <td>20:30</td>
+                            <td>&nbsp;</td>
+                            <td>20:30</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <img src="w3images/table_snacks.jpg" class="w3-grayscale w3-padding"
                     style="width:100%;max-width:1000px;margin-top:32px;">
             </div>
@@ -245,7 +403,8 @@
         </div>
 
         <!-- Contact/Area Container -->
-        <div class="w3-container w3-content  border-yellow w3-padding" id="where" style=" max-width:900px;padding-bottom:32px;">
+        <div class="w3-container w3-content  border-yellow w3-padding" id="where"
+            style="max-width:900px;padding-bottom:32px;">
             <div class="w3-content" style="max-width:900px">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">КАК С НАМИ
                         СВЯЗАТЬСЯ</span></h5>
@@ -308,6 +467,18 @@
             } else {
                 iframe.style.display = "none";
                 document.getElementById("formBtn").textContent = "Нажмите чтобы записаться на занятия"
+
+            }
+        }
+
+        function toggleSchedule() {
+            iframe = document.getElementById("schedule");
+            if (iframe.style.display != "block") {
+                iframe.style.display = "block";
+                document.getElementById("scheduleBtn").textContent = "Закрыть расписание"
+            } else {
+                iframe.style.display = "none";
+                document.getElementById("scheduleBtn").textContent = "Нажмите чтобы показать расписание"
 
             }
         }
