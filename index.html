@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <title>Демо-сайт</title>
+    <title>Emigrantka</title>
+    <link rel="icon" type="image/x-icon" href="w3images/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="w3.css">
@@ -111,14 +112,6 @@
                     height="30px" width="60px"></a>
         </div>
     </header>
-    <script>
-        //this script ensures the internal links account for the fixed topbar, optional
-        document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
-        document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
-
-        //console.log(document.getElementById('toplinks').offsetHeight + 'px');
-        //console.log(window.getComputedStyle(document.documentElement).scrollPaddingTop);
-    </script>
 
     <!-- Add a background color and large text to the whole page -->
     <div class="local-grey w3-large">
@@ -195,9 +188,6 @@
                                 В цену входит тематический <a href="javascript:void(0)" onclick="clickSpeakerGroup();">разговорный клуб</a>, который организуется раз в 2 недели в пространстве Культурного центра.
                             </p>
                         </div>
-                        <script> function clickSpeakerGroup() {
-                        document.getElementById("speakerGroup").click();
-                        }</script>
                     </div>
 
                     <div id="Menu2" class="w3-container menu w3-padding-48 w3-card lighter-background">
@@ -403,9 +393,9 @@
         </div>
 
         <!-- Contact/Area Container -->
-        <div class="w3-container w3-content  border-yellow w3-padding" id="where"
+        <div class="w3-container" id="where"
             style="max-width:900px;padding-bottom:32px;">
-            <div class="w3-content" style="max-width:900px">
+            <div class="w3-content border-yellow w3-padding" style="max-width:900px">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">КАК С НАМИ
                         СВЯЗАТЬСЯ</span></h5>
                 <span class="w3-tag w3-yellow">Контакты</span>
@@ -441,67 +431,8 @@
                 class="w3-hover-text-green">w3.css</a></p>
     </footer>
     </div>
-    <script>
-        // Tabbed Menu
-        function openMenu(evt, menuName) {
-            var i, x, tablinks;
-            x = document.getElementsByClassName("menu");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < x.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
-            }
-            document.getElementById(menuName).style.display = "block";
-            evt.currentTarget.firstElementChild.className += " w3-yellow";
-        }
-        document.getElementById("myLink").click();
-
-        // iframe visibility toggler
-        function toggleIframe() {
-            iframe = document.getElementsByName("myiFrame")[0];
-            if (iframe.style.display != "block") {
-                iframe.style.display = "block";
-                document.getElementById("formBtn").textContent = "Закрыть форму"
-            } else {
-                iframe.style.display = "none";
-                document.getElementById("formBtn").textContent = "Нажмите чтобы записаться на занятия"
-
-            }
-        }
-
-        function toggleSchedule() {
-            iframe = document.getElementById("schedule");
-            if (iframe.style.display != "block") {
-                iframe.style.display = "block";
-                document.getElementById("scheduleBtn").textContent = "Закрыть расписание"
-            } else {
-                iframe.style.display = "none";
-                document.getElementById("scheduleBtn").textContent = "Нажмите чтобы показать расписание"
-
-            }
-        }
-
-        // gallery
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
-    </script>
+    <script src="index.js"></script>
+    <script src="index_ru.js"></script>
 </body>
 
 </html>
