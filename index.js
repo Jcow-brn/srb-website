@@ -38,6 +38,18 @@ function clickSpeakerGroup() {
     document.getElementById("speakerGroup").click();
 }
 
+
+//create collapsibles
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.style.display = "none";
+    this.nextElementSibling.style.display = "block";
+
+  });
+}
+
 //this script ensures the internal links account for the fixed topbar, optional
 document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
 document.documentElement.style.scrollPaddingTop = document.getElementById('toplinks').offsetHeight - 1 + 'px';
