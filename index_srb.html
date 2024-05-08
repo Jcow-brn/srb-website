@@ -24,12 +24,20 @@
             background-repeat: no-repeat;
         }
 
+        .flagbg {
+            background-position: center;
+            background-color: #9a9cac;
+            background-size: contain;
+            min-height: 42px;
+            background-repeat: no-repeat;
+        }
+
         .menu {
             display: none;
         }
 
         .lighter-background {
-            background-color: #abadbcff !important;
+            background-color: rgb(219, 219, 227) !important;
         }
 
         div.border-yellow {
@@ -89,22 +97,19 @@
     <!-- Links (sit on top) -->
     <div class="w3-top" id="toplinks">
         <div class="w3-row w3-padding local-grey w3-border-bottom w3-border-black">
-            <div class="w3-col m3 s6">
-                <a href="#about" class="w3-button yellow-button w3-block w3-center">ABOUT</a>
+            <div class="w3-col m4 s6">
+                <a href="#about" class="w3-button yellow-button w3-block w3-center"><b>O NAMA</b></a>
             </div>
-            <div class="w3-col m3 s6">
-                <a href="#courses" class="w3-button yellow-button w3-block w3-center">CLASSES</a>
+            <div class="w3-col m4 s6">
+                <a href="#events" class="w3-button yellow-button w3-block w3-center"><b>DOGAĐAJI</b></a>
             </div>
-            <div class="w3-col m3 s6">
-                <a href="#events" class="w3-button yellow-button w3-block w3-center">EVENTS</a>
-            </div>
-            <div class="w3-col m3 s6">
-                <a href="#where" class="w3-button yellow-button w3-block w3-center">CONTACTS</a>
+            <div class="w3-col m4 s12">
+                <a href="#where" class="w3-button yellow-button w3-block w3-center"><b>KONTAKT</b></a>
             </div>
         </div>
     </div>
     <!-- Header with image -->
-    <header class="bgimg w3-display-container breaks-on-dark" id="home">
+    <header class="w3-display-container flagbg" id="home">
         <div class="w3-display-topright w3-padding-large">
             <a class="w3-grayscale-min w3-padding" href="index.html"><img src="w3images/RF_flag.png" alt="russian"
                     height="30px" width="60px"></a>
@@ -112,6 +117,10 @@
                     height="30px" width="60px"></a>
         </div>
     </header>
+
+    <div class="bgimg w3-display-container breaks-on-dark">
+
+    </div>
 
     <!-- Add a background color and large text to the whole page -->
     <div class="local-grey w3-large">
@@ -123,269 +132,186 @@
                     <img src="w3images/logo_svg_textonly.svg" style="max-width:100%">
                 </p>
                 <div class="border-yellow no-bottom-border w3-padding">
-                    <p>Kulturni centar Emigrantka je udruženje koje organizuje događaje u oblasti umetnosti, zabave i
-                        edukacije. Centar se nalazi u neposrednoj blizini Vukovog spomenika, unutar lepe i moderne
-                        zgrade u ulici Čelopečka 10.
-                        U okviru centra ogranizuju se kursevi, lekcije, stručni skupovi, seminari, javna čitanja i
-                        pozorišna dešavanja, filmske projekcije, izložbe, radionice i razgovorni klubovi na različitim
-                        jezicima.</p>
-                    <p>
-                        Kroz organizovanje i promociju kulturnih aktivnosti nastoji se na povezivanju umetnika sa
-                        lokalnom zajednicom, a posebno na uključivanju, adaptiranju i upoznavanju relokanata sa domaćim
-                        kulturnim i umetničkim nasleđem.
-                    <div class=" w3-margin-top w3-content w3-display-container">
-                        <img class="mySlides" src="w3images/photo1bw.jpg" style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/photo1cl.jpg" style="max-width: 100%; max-height:100">
+                    <div class="w3-card lighter-background w3-padding">
+                        <p>Kulturni centar Emigrantka je udruženje koje organizuje događaje u oblasti umetnosti, zabave
+                            i
+                            edukacije. Centar se nalazi u neposrednoj blizini Vukovog spomenika, unutar lepe i moderne
+                            zgrade u ulici Čelopečka 10.
+                            U okviru centra ogranizuju se kursevi, lekcije, stručni skupovi, seminari, javna čitanja i
+                            pozorišna dešavanja, filmske projekcije, izložbe, radionice i razgovorni klubovi na
+                            različitim
+                            jezicima.
+                        </p>
+                        <a class="collapsible w3-center" style="display: block;">Више текста</a>
+                        <p class="content">
+                            Kroz organizovanje i promociju kulturnih aktivnosti nastoji se na povezivanju umetnika sa
+                            lokalnom zajednicom, a posebno na uključivanju, adaptiranju i upoznavanju relokanata sa
+                            domaćim
+                            kulturnim i umetničkim nasleđem.
+                        </p>
 
-                        <img class="mySlides" src="w3images/photo2bw.jpg" style="max-width: 100%; max-height:100">
+                    </div>
+                    <div class="w3-margin-top w3-content w3-display-container">
+                        <img class="mySlides" src="w3images/interior.jpg" style="max-width: 100%; max-height:100">
+                        <img class="mySlides" src="w3images/door.jpg" style="max-width: 100%; max-height:100">
+
+                        <img class="mySlides" src="w3images/photo1cl.jpg" style="max-width: 100%; max-height:100">
                         <img class="mySlides" src="w3images/photo6cl.jpg" style="max-width: 100%; max-height:100">
 
-                        <img class="mySlides" src="w3images/photo5bw.jpg" style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/photo4bw.jpg" style="max-width: 100%; max-height:100">
                         <button class="w3-button w3-yellow pic-button w3-display-left"
                             onclick="plusDivs(-1)">&#10094;</button>
                         <button class="w3-button w3-yellow pic-button w3-display-right"
                             onclick="plusDivs(+1)">&#10095;</button>
                     </div>
-
-                    <p><strong>Address: </strong>Čelopečka 10, Beograd</p>
+                    <p><strong>Adresa: </strong>Čelopečka 10, Beograd</p>
                 </div>
             </div>
         </div>
 
-        <!-- Courses Container -->
-        <div class="w3-container smooth-height" id="courses">
-            <div class="w3-content border-yellow no-bottom-border w3-padding" style="max-width:900px">
-
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">CLASSES</span></h5>
-
-
-                <div class="w3-bar-block w3-third w3-container w3-border w3-border-black w3-padding lighter-background">
-                    <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu1');" id="myLink">
-                        <div class="tablink">Serbian</div>
-                    </a>
-                    <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu2');">
-                        <div class="tablink">Speaking group</div>
-                    </a>
-                    <a class="w3-bar-item" href="javascript:void(0)" onclick="openMenu(event, 'Menu3');">
-                        <div class="tablink">English</div>
-                    </a>
-                </div>
-                <!--style="min-height: 690px;"-->
-                <div class="w3-twothird w3-container">
-
-
-                    <div id="Menu1" class="menu  lighter-background">
-                        <div class="w3-container w3-padding-48 w3-card" style="text-align: center;">
-                            <h5>Serbian classes</h5>
-                            <p class="w3-text-black" style="text-align: center;">
-                                The class is led by native serbian speakers with philological education. Most of the
-                                time the class is held on-site and in groups, but online and individual classes are also
-                                available. One lesson is 60 minutes, there are two lessons every week, you will also get
-                                a digital copy of all materials.
-                                Each lesson includes homework. In general the program aims to improve speaking
-                                capabilities while also thoroughly covering basic grammar. Group size is usually 5-6
-                                people. <br>
-                                One group lesson is 10 euro per person, an individual lesson is 25.
-                                The price includes access to a themed <a href="javascript:void(0)"
-                                    onclick="clickSpeakerGroup();">speaking club</a>, which happens on premises every
-                                two weeks.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="Menu2" class="w3-container menu w3-padding-48 w3-card lighter-background">
-                        <h5 style="text-align: center;">Serbian language speaking club</h5>
-                        <p class="w3-text-black" style="text-align: center;">The club gathers every 2 weeks in a more
-                            relaxed atmosphere than regular classes, with snacks and serbian guests.<br>
-                            The duration is usually 3 hours, we try to only speak serbian during the session. (beginners
-                            need not worry, they are still welcome - even with only the words they currently know it is
-                            still good practice as long as they are engaged and having a good time)<br>
-                            Each session has a specific topic, you will get some questions in advance so you can
-                            prepare.<br>
-                            For all students (and their parents) the club is fully free, for new people - first visit
-                            free, then same rate as one regular class in a group.
-                        </p>
-                        <br>
-                    </div>
-
-                    <div id="Menu3" class="w3-container menu w3-padding-48 w3-card lighter-background">
-                        <p class="w3-text-grey">The English course is being worked on.</p><br>
-                    </div>
-                </div>
-                <div><a class="w3-center" style="display: block;" href="javascript:void(0)" id="scheduleBtn"
-                        onclick="toggleSchedule();">Click here to see the schedule</a></div>
-                <table id="schedule" class="w3-padding" hidden>
-                    <tbody>
-                        <tr style="font-weight: bold; background-color: #ffff00;">
-                            <td>group:</td>
-                            <td>Mon</td>
-                            <td>Tue</td>
-                            <td>Wed</td>
-                            <td>Thu</td>
-                            <td>Fri</td>
-                            <td>Sat</td>
-                            <td>Sun</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>A1 (on-site)</td>
-                            <td>16:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>13:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #ffffff">
-                            <td>A1+ a (on-site)</td>
-                            <td>&nbsp;</td>
-                            <td>13:30</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>13:30</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>A1+ b (on-site)</td>
-                            <td>&nbsp;</td>
-                            <td>19:30</td>
-                            <td>&nbsp;</td>
-                            <td>19:30</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #ffffff">
-                            <td>A2 a (on-site/online)</td>
-                            <td>&nbsp;</td>
-                            <td>12:00</td>
-                            <td>&nbsp;</td>
-                            <td>12:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>A2 b (online)</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>12:00</td>
-                            <td>&nbsp;</td>
-                            <td>12:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #ffffff">
-                            <td>B1 (on-site/online)</td>
-                            <td>&nbsp;</td>
-                            <td>17:30</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>B2/C1 a (on-site)</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>19:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #ffffff">
-                            <td>B2/C1 b (online)</td>
-                            <td>17:00</td>
-                            <td>&nbsp;</td>
-                            <td>17:00</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>kids (11-12) a (on-site)</td>
-                            <td>19:15</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>19:45</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #ffffff">
-                            <td>kids (11-12) b (online)</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>13:00</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr style="background-color: #f0f0f0">
-                            <td>youth (13-15) (on-site)</td>
-                            <td>20:30</td>
-                            <td>&nbsp;</td>
-                            <td>20:30</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <img src="w3images/table_snacks.jpg" class="w3-grayscale w3-padding"
-                    style="width:100%;max-width:1000px;margin-top:32px;">
-            </div>
-        </div>
 
         <!-- Events area -->
         <div class="w3-container" id="events">
 
             <div class="w3-content border-yellow no-bottom-border w3-padding" style="max-width:900px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">EVENTS</span></h5>
-                <p>
-                    We regularly host interesting people and organise gatherings of all kinds. Here you can find out
-                    about upcoming events or browse the previous ones.
-                </p>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide"><b>DOGAĐAJI</b></span></h5>
+                <div class="w3-card lighter-background w3-padding">
+                    <p>
+                        U našem centru organizujemo pozorišna čitanja (format koji je više od čitanja i obimom manji od
+                        celovečernje predstave tj. čitalačko izvođenje sa glumačkom interpretacijom i određenim scenskim
+                        rešenjima), izložbe, lekcije, radionice, seminare, projekcije filmova i razgovorne klubove na
+                        različitim jezicima. Ovde možete videti datume predstojećih događaja i pročitati o prošlim.
+                    </p>
+                </div>
+                <br>
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Event 1</h2>
+                    <h2>Seminar "menjacnica"</h2>
                     <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/fakecalendar.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                        <img src="w3images/workshop1.png" style="width:100%;max-width:1000px;" alt="calendar">
                     </div>
                     <div class="w3-twothird w3-container w3-border w3-border-black">
                         <p>
-                            january 1st 19:00 - (person) is visiting us and we will be talking about X and doing Y.
+                            maj 11 18:00
                         </p>
                     </div>
                 </div>
                 <br>
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Event 2</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/fakecalendar.jpg" style="width:100%;max-width:1000px;" alt="calendar">
-                    </div>
+                    <h2>Lekcija prof. Enise Uspenski</h2>
+                    <!-- <div class="w3-third w3-container w3-padding">
+                        <img src="w3images/event2.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                    </div> -->
                     <div class="w3-twothird w3-container w3-border w3-border-black">
                         <p>
-                            january 1st 19:00 - (person) is visiting us and we will be talking about X and doing Y.
+                            maj 12 16:00
                         </p>
                     </div>
                 </div>
                 <br>
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Event 3</h2>
+                    <h2>Španski razgovorni klub</h2>
                     <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/fakecalendar.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                        <img src="w3images/bubble.png" style="width:75%;max-width:1000px;" alt="calendar">
                     </div>
                     <div class="w3-twothird w3-container w3-border w3-border-black">
                         <p>
-                            january 1st 19:00 - (person) is visiting us and we will be talking about X and doing Y.
+                            maj 18 18:00
                         </p>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-container w3-card lighter-background">
+                    <h2>Srpski razgovorni klub</h2>
+                    <div class="w3-third w3-container w3-padding">
+                        <img src="w3images/bubble.png" style="width:75%;max-width:1000px;" alt="calendar">
+                    </div>
+                    <div class="w3-twothird w3-container w3-border w3-border-black">
+                        <p>
+                            maj 19 16:00
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-container w3-card lighter-background">
+                    <h2>Radionica za decu "srpska bajka"</h2>
+                    <div class="w3-third w3-container w3-padding">
+                        <img src="w3images/bubble.png" style="width:75%;max-width:1000px;" alt="calendar">
+                    </div>
+                    <div class="w3-twothird w3-container w3-border w3-border-black">
+                        <p>
+                            maj 25 tba
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="w3-container w3-card lighter-background">
+                    <h2>O Marti Grem i A. Tarkovskom - lekcija + radionica</h2>
+                    <div class="w3-third w3-container w3-padding">
+                        <img src="w3images/cinema.png" style="width:75%;max-width:1000px;" alt="calendar">
+                    </div>
+                    <div class="w3-twothird w3-container w3-border w3-border-black">
+                        <p>
+                            maj 26 tba
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <a class="collapsible w3-center w3-card lighter-background w3-padding"
+                    style="display: block;">Погледајте старије догађаје</a>
+                <div class=content>
+                    <br>
+                    <div class="w3-container w3-yellow w3-card w3-center" style="display: block;">
+                        <h2>▼ Дневник старих догађаја ▼</h2>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Pozorišno čitanje komada "Božić" autorke Ženje Berkovič.</h2>
+                        <div class="w3-third w3-container w3-padding">
+                            <img src="w3images/event2.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                        </div>
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>
+                                10.01.2024 Pozorišno čitanje komada "Božić" autorke Ženje Berkovič. Smestivši biblijski
+                                siže u realije prepoznatljive savremenom kontekstu autorka se poigrava sa žanrom,
+                                tekstom, ritmom i smislom biblijske priče.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Izložba posvećena poeziji Luke Kurjačkog</h2>
+                        <div class="w3-third w3-container w3-padding">
+                            <img src="w3images/event1.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                        </div>
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>
+                                17.12.2023 Luka je bio naš dramaturg i filolog, zaljubljenik u Japan, pesnik i još mnogo
+                                toga. Izložba je posvećena njegovoj pesmi "Između dva grada" (o odnosu sa Poljskom) i
+                                vezama koje je imao sa Sankt Peterburgom u kojem je jedno vreme živeo i radio kao
+                                profesor jezika.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Чтение пьесы "Бугистан" Л. Курьячкого</h2>
+                        <div class="w3-third w3-container w3-padding">
+                            <img src="w3images/event3.jpg" style="width:100%;max-width:1000px;" alt="calendar">
+                        </div>
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>
+                                Pozorišno čitanje komada "Bugistan" mladog srpskog dramaturga Luke Kurjačkog. Komad
+                                "Bugistan - operacija raka u tri čina" govori o iskustvu kroz koje je dramaturg sam
+                                prošao - u pitanju je operacija tumora mozga. Sazdavši zaseban jezik, baziran na
+                                stvarnoj afaziji, autor nas vodi kroz ceo jedan izmišljeni svet - Bugistan, u kojem se
+                                ogledamo i preispitujemo.</p>
+                            <a class="collapsible w3-center" style="display: block;">U igranju učestvuju glumci:</a>
+                            <p class="content"> U igranju učestvuju glumci: Anton Smorodin (Kalužski teatar),
+                                Kristina Kozub (Institut M. S. Shchepkina), Kiril Kozub (Teatat Vutkjuka), Olga
+                                Kuvardina (Akademija Sankt Peterburg) Marina Baboshina (Krasnojarski TJUZ), Evgenij
+                                Marder (Krasnojarski TJUZ), Aleksej Dvoeglazov (Aleksandrinski teatar), Ljubica Damčević
+                                - vilonistkinja i performerka Dah teatra
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <br>
@@ -394,31 +320,33 @@
         </div>
 
         <!-- Contact/Area Container -->
-        <div class="w3-container" id="where"
-            style="padding-bottom:32px;">
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
             <div class="w3-content border-yellow w3-padding" style="max-width:900px">
-                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide">GET IN TOUCH</span></h5>
-                <span class="w3-tag w3-yellow">Contacts</span>
-
-                <p>phone: 1111111111111</p>
-                <p>telegram: @example</p>
-                <a id="formBtn"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
-                    onclick="toggleIframe();" target="myiFrame">Click here to sign up for class</a>
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide"><b>KAKO BITI SA NAMA
+                            KONTAKT</b></span></h5>
+                <span class="w3-tag w3-yellow">KONTAKT</span>
+                <div class="w3-card lighter-background w3-padding">
+                    <p>telegram: @example</p>
+                    <p>e-mail: </p>
+                    <!-- <a id="formBtn"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
+                        onclick="toggleIframe();" target="myiFrame">Нажмите чтобы записаться на занятия</a> -->
+                </div>
+                <!-- 
                 <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="1100" frameborder="0"
-                    marginheight="0" marginwidth="0">Loading…</iframe><br>
+                    marginheight="0" marginwidth="0">Loading…</iframe><br> -->
 
-
-                <p class="w3-tag w3-yellow">Location</p>
-                <p>We are located in cenral Belgrade, address - Čelopečka 10</p>
-                <p>ground floor, call via button, once inside look for the door with our logo slightly to the left </p>
-
+                <br>
+                <span class="w3-tag w3-yellow">LOKACIJA</span>
+                <div class="w3-card lighter-background w3-padding">
+                    <p>Centar se nalazi u neposrednoj blizini Vukovog spomenikal, u ulici Čelopečka br. 10, <br>interfon
+                        br.
+                        1, od ulaznih vrata zgrade idete samo pravo i videćete tablu sa našim logom na vratima.</p>
+                </div>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.6952703405113!2d20.480044769670943!3d44.8056499497075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9eccbf8f17%3A0x1a92d7d72d92297a!2s%C4%8Celope%C4%8Dka%2010%2C%20Beograd%2011050!5e0!3m2!1sen!2srs!4v1711216333085!5m2!1sen!2srs"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.79734491281624!2d20.480168214558987!3d44.805756940051175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7b144c497353%3A0xcdd6b0cad361e0e6!2sKC%20Emigrantka!5e0!3m2!1sen!2srs!4v1713880428284!5m2!1sen!2srs"
                     width="100%" height="450" style="border:0; padding-bottom: 40px;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
             </div>
         </div>
 
