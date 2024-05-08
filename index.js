@@ -12,8 +12,10 @@ function openMenu(evt, menuName) {
     document.getElementById(menuName).style.display = "block";
     evt.currentTarget.firstElementChild.className += " w3-yellow";
 }
-document.getElementById("myLink").click();
-
+start_elem = document.getElementById("myLink");
+if (start_elem != null) {
+    start_elem.click();
+}
 
 // gallery
 var slideIndex = 1;
