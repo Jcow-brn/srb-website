@@ -7,7 +7,7 @@ function openMenu(evt, menuName) {
     }
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-yellow", "");
+        tablinks[i].firstChild.firstChild.className = tablinks[i].firstChild.firstChild.className.replace(" w3-yellow", "");
     }
     document.getElementById(menuName).style.display = "block";
     evt.currentTarget.firstElementChild.className += " w3-yellow";
