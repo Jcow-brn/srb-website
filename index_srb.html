@@ -2,13 +2,13 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>Emigrantka</title>
-    <link rel="icon" type="image/x-icon" href="w3images/favicon.ico">
-    <meta charset="UTF-8">
+    <link href="w3images/favicon.ico" rel="icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="form.css">
-    <style>
+    <link href="w3.css" rel="stylesheet" />
+    <link href="form.css" rel="stylesheet" />
+    <style type="text/css">
         body,
         html {
             height: 100%;
@@ -88,306 +88,375 @@
     </style>
 </head>
 
-<body>
-    <!-- adaptive padding for fixed navbar -->
+<body><!-- adaptive padding for fixed navbar -->
     <div class="w3-row w3-padding">
         <div class="w3-col m6 s12"><a class="w3-button w3-block w3-center">...</a></div>
+
         <div class="w3-col m6 s12"><a class="w3-button w3-block w3-center">...</a></div>
     </div>
     <!-- Links (sit on top) -->
+
     <div class="w3-top" id="toplinks">
         <div class="w3-row w3-padding local-grey w3-border-bottom w3-border-black">
-            <div class="w3-col m4 s6">
-                <a href="#about" class="w3-button yellow-button w3-block w3-center"><b>O NAMA</b></a>
-            </div>
-            <div class="w3-col m4 s6">
-                <a href="#events" class="w3-button yellow-button w3-block w3-center"><b>DOGAĐAJI</b></a>
-            </div>
-            <div class="w3-col m4 s12">
-                <a href="#where" class="w3-button yellow-button w3-block w3-center"><b>KONTAKT</b></a>
-            </div>
+            <div class="w3-col m4 s6"><a class="w3-button yellow-button w3-block w3-center" href="#about"><b>O
+                        NAMA</b></a></div>
+
+            <div class="w3-col m4 s6"><a class="w3-button yellow-button w3-block w3-center"
+                    href="#events"><b>DOGAĐAJI</b></a></div>
+
+            <div class="w3-col m4 s12"><a class="w3-button yellow-button w3-block w3-center"
+                    href="#where"><b>KONTAKT</b></a></div>
         </div>
     </div>
     <!-- Header with image -->
+
     <header class="w3-display-container flagbg" id="home">
-        <div class="w3-display-topright w3-padding-large">
-            <a class="w3-grayscale-min w3-padding" href="index.html"><img src="w3images/RF_flag.png" alt="russian"
-                    height="30px" width="60px"></a>
-            <a class="w3-grayscale-min w3-padding" href="index_en.html"><img src="w3images/UK_flag.png" alt="english"
-                    height="30px" width="60px"></a>
-        </div>
+        <div class="w3-display-topright w3-padding-large"><a class="w3-grayscale-min w3-padding" href="index.html"><img
+                    alt="russian" height="30px" src="w3images/RF_flag.png" width="60px" /></a> <a
+                class="w3-grayscale-min w3-padding" href="index_en.html"><img alt="english" height="30px"
+                    src="w3images/UK_flag.png" width="60px" /></a></div>
     </header>
 
-    <div class="bgimg w3-display-container breaks-on-dark">
-
-    </div>
-
+    <div class="bgimg w3-display-container breaks-on-dark"></div>
     <!-- Add a background color and large text to the whole page -->
-    <div class="local-grey w3-large">
 
-        <!-- About Container -->
+    <div class="local-grey w3-large"><!-- About Container -->
         <div class="w3-container" id="about">
             <div class="w3-content" style="max-width:900px">
-                <p class="w3-center">
-                    <img src="w3images/logo_svg_textonly.svg" style="max-width:100%">
-                </p>
+                <p class="w3-center"><img src="w3images/logo_svg_textonly.svg" style="max-width:100%" /></p>
+
                 <div class="border-yellow no-bottom-border w3-padding">
                     <div class="w3-card lighter-background w3-padding">
                         <p>Kulturni centar Emigrantka je udruženje koje organizuje događaje u oblasti umetnosti, zabave
-                            i
-                            edukacije. Centar se nalazi u neposrednoj blizini Vukovog spomenika, unutar lepe i moderne
-                            zgrade u ulici Čelopečka 10.
-                            U okviru centra ogranizuju se kursevi, lekcije, stručni skupovi, seminari, javna čitanja i
-                            pozorišna dešavanja, filmske projekcije, izložbe, radionice i razgovorni klubovi na
-                            različitim
-                            jezicima.
-                        </p>
-                        <a class="collapsible w3-center" style="display: block;"><i>Više teksta</i></a>
-                        <p class="content">
-                            Kroz organizovanje i promociju kulturnih aktivnosti nastoji se na povezivanju umetnika sa
-                            lokalnom zajednicom, a posebno na uključivanju, adaptiranju i upoznavanju relokanata sa
-                            domaćim
-                            kulturnim i umetničkim nasleđem.
-                        </p>
+                            i edukacije. Centar se nalazi u neposrednoj blizini Vukovog spomenika, unutar lepe i moderne
+                            zgrade u ulici Čelopečka 10. U okviru centra ogranizuju se kursevi, lekcije, stručni
+                            skupovi, seminari, javna čitanja i pozori&scaron;na de&scaron;avanja, filmske projekcije,
+                            izložbe, radionice i razgovorni klubovi na različitim jezicima.</p>
+                        <a class="collapsible w3-center" style="display: block;"><i>Vi&scaron;e teksta</i></a>
 
+                        <p class="content">Kroz organizovanje i promociju kulturnih aktivnosti nastoji se na povezivanju
+                            umetnika sa lokalnom zajednicom, a posebno na uključivanju, adaptiranju i upoznavanju
+                            relokanata sa domaćim kulturnim i umetničkim nasleđem.</p>
                     </div>
-                    <div class="w3-margin-top w3-content w3-display-container">
-                        <img class="mySlides" src="w3images/interior.jpg" style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/door.jpg" style="max-width: 100%; max-height:100">
 
-                        <img class="mySlides" src="w3images/photo1_nofilter.jpg"
-                            style="max-width: 100%; max-height:100">
-                        <img class="mySlides" src="w3images/photo2_nofilter.jpg"
-                            style="max-width: 100%; max-height:100">
-
-                        <button class="w3-button w3-yellow pic-button w3-display-left"
-                            onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-yellow pic-button w3-display-right"
-                            onclick="plusDivs(+1)">&#10095;</button>
+                    <div class="w3-margin-top w3-content w3-display-container"><img class="mySlides"
+                            src="w3images/interior.jpg" style="max-width: 100%; max-height:100" /> <img class="mySlides"
+                            src="w3images/door.jpg" style="max-width: 100%; max-height:100" /> <img class="mySlides"
+                            src="w3images/photo1_nofilter.jpg" style="max-width: 100%; max-height:100" /> <img
+                            class="mySlides" src="w3images/photo2_nofilter.jpg"
+                            style="max-width: 100%; max-height:100" /><button
+                            class="w3-button w3-yellow pic-button w3-display-left"
+                            onclick="plusDivs(-1)">❮</button><button
+                            class="w3-button w3-yellow pic-button w3-display-right" onclick="plusDivs(+1)">❯</button>
                     </div>
+
                     <p><strong>Adresa: </strong>Čelopečka 10, Beograd</p>
                 </div>
             </div>
         </div>
-
-
         <!-- Events area -->
-        <div class="w3-container" id="events">
 
+        <div class="w3-container" id="events">
             <div class="w3-content border-yellow no-bottom-border w3-padding" style="max-width:900px">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide"><b>DOGAĐAJI</b></span></h5>
+
                 <div class="w3-card lighter-background w3-padding">
-                    <p>
-                        U našem centru organizujemo pozorišna čitanja (format koji je više od čitanja i obimom manji od
-                        celovečernje predstave tj. čitalačko izvođenje sa glumačkom interpretacijom i određenim scenskim
-                        rešenjima), izložbe, lekcije, radionice, seminare, projekcije filmova i razgovorne klubove na
-                        različitim jezicima. Ovde možete videti datume predstojećih događaja i pročitati o prošlim.
-                    </p>
+                    <p>U na&scaron;em centru organizujemo pozori&scaron;na čitanja (format koji je vi&scaron;e od
+                        čitanja i obimom manji od celovečernje predstave tj. čitalačko izvođenje sa glumačkom
+                        interpretacijom i određenim scenskim re&scaron;enjima), izložbe, lekcije, radionice, seminare,
+                        projekcije filmova i razgovorne klubove na različitim jezicima. Ovde možete videti datume
+                        predstojećih događaja i pročitati o pro&scaron;lim.</p>
                 </div>
-                <br>
+                &nbsp;
+
+
+
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Lekcija prof. Enise Uspenski</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/Enisa_Uspenski.jpg" style="width:75%;max-width:1000px;" alt="calendar">
-                    </div>
+                    <h2>Radionica "Srpska bajka 2" za roditelja i dete</h2>
+
+                    <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/bajka2.jpg"
+                            style="width:75%;max-width:1000px;" /></div>
+
                     <div class="w3-twothird w3-container w3-border w3-border-black">
-                        <p>
-                            12.5.2024 16:00 <br>
-                            Enisa Uspenski je cenjen sprski prevodilac sa ruskog jezika i redovna profesorka na
-                            Fakultetu dramskih umetnosti u Beogradu.
-                            Autorka je brojnih članaka i prevodilac dela A. S. Puškina, D. Harmsa, P. Florenskog, N.
-                            Berđajeva... Uža sfera njenog naučno-istraživačkog rada je rusistika sa posebnim akcentom na
-                            emigrantologiju, dostojevistiku, rusku dramu, pozorište, film i poeziju.
-                        </p>
+                        <p>15.6.2024 10:00<br />
+                            Zajedno sa svojim detetom prolazite jezičke igre u kombinaciji sa glumačkim vežbama
+                            usmerenim na scensku improvizaciju sa partnerom. Radionica se sastoji iz nekoliko delova
+                            ("predstavljanje junaka", "čarobni predmet", "pomoćnik" itd.), svaki je povezan za nekom od
+                            funkcija bajke po Vladimiru Propu.</p>
+                        <a class="collapsible w3-center" style="display: block;"><i>Read more</i></a>
+                        <p class="content">
+
+                            Na taj način, krećemo se kroz radionicu prateći strukturu
+                            bajke. Svaka od igara usmerena je ili na učenje i pamćenje novih reči ili na ponavljanje
+                            ključnih fraza na srpskom jeziku. Kroz igru upoznajemo se sa bazičnom gramatikom i
+                            elementarnim rečnikom. Dobijate mogućnost da kvalitetno i strukturisano provedete vreme sa
+                            svojim detetom u živoj interakciji sa drugom decom i roditeljima, a takođe da razvijate
+                            istovremeno svoj srpski jezik i kreativno mišljenje.</p>
                     </div>
                 </div>
-                <br>
+                <br />
+
+
+
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Španski razgovorni klub</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/bubble.png" style="width:75%;max-width:1000px;" alt="calendar">
-                    </div>
+                    <h2>Lekcija Sofije Beljakove</h2>
+
+                    <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/Sofia_Belyakova.jpg"
+                            style="width:75%;max-width:1000px;" /></div>
+
                     <div class="w3-twothird w3-container w3-border w3-border-black">
-                        <p>
-                            18.5.2024 18:00 <br>
-                            Španski razgovorni klub je prilika da vežbate konverzaciju sa izvornim govornikom! Klub vodi
-                            Meksikanka Majra koja će vam pomoći da vodite razgovor na svakodnevne teme u društvu drugih
-                            govornika, uz piće, grickalice i u druželjubivoj atmosferi našeg centra. Tema narednog kluba
-                            je "Život u Beogradu - prednosti i mane". Za sva dodatna pitanja možete nam pisati na mejl
-                            adresu.
-                        </p>
+                        <p>15.6.2024 12:00, startnina 1500 din..<br />
+                            
+                            "Tinejdžeri u emigraciji. Plusevi, minusi, zamke i kamenovi spoticanja"
+                            Sofija Beljakova je diplomirani psiholog geštalt orijentacije, priznati terapeut Uralskog
+                            instituta za geštalt i savremenu psihologiju. Više od 5 godina specijalizuje se za rad sa
+                            decom i tinejdžerima. Vodi autorski trening za decu i grupu podrške za odrasle. Organizuje
+                            klub roditelja tinejdžera u Beogradu. Mama je tinejdžera u emigraciji.</p>
                     </div>
                 </div>
-                <br>
+                <br />
+
+
+
+
                 <div class="w3-container w3-card lighter-background">
-                    <h2>Srpski razgovorni klub</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/bubble.png" style="width:75%;max-width:1000px;" alt="calendar">
-                    </div>
+                    <h2>Francuski razgovorni klub</h2>
+
+                    <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/french.jpg"
+                            style="width:75%;max-width:1000px;" /></div>
+
                     <div class="w3-twothird w3-container w3-border w3-border-black">
-                        <p>
-                            19.5.2024 16:00 <br>
-                            Tematski razgovorni klub na srpskom jeziku odvija se uživo, svake druge nedelje, u prijatnoj
-                            atmosferi, uz čašu vina i sa srpskim gostima. Klub obično traje 3 sata, tokom kojih se
-                            trudimo da govorimo sve vreme na srpskom (oni koji tek počinju da uče jezik mogu se slobodno
-                            pridružiti, koristeći samo reči koje znaju, to je samo dobar trening i najvažnije je da vam
-                            bude interesantno). Svaki klub ima svoju temu i za svaki dobijate pitanja za koja možete
-                            unapred da se pripremite. </p>
-                        <a class="collapsible w3-center" style="display: block;"><i>Više teksta</i></a>
-                        <p class="content"> Oni koji imaju decu - mogu doći sa njima, postoji odvojena soba u
-                            kojoj deca mogu crtati dok se mi družimo. Takođe, možete doći sa svojim kućnim ljubimcem,
-                            ako ste sigurni da nije sklon sukobu sa drugim kućnim ljubimcima. Klub se fokusira na
-                            razgovor (o različitim društveno interesantnim i važnim temama, od onih kao što su "Šta
-                            posetiti u Srbiji?", "Mentalitet", "Hrana" do takvih kao što su "Kič", "Socijalne mreže" i
-                            druge). Takođe uključuje kulturne događaje kao što je zajednička poseta bioskopu ili
-                            razgovor o trenutnoj izložbi.
-                        </p>
+                        <p>15.6.2024 19:00<br />
+                            Klub vodi Mihajlo Sredojević, bilingvalni profesor francuskog jezika, treća generacija
+                            srpskih emigranata u Belgiji. Proveo je 29 godina u Briselu gde je i završio fakultet,
+                            preselivši se potom u Beograd. Za vreme kluba razgovaramo na svakodnevne teme u zabavnoj i
+                            prijatnoj atmosferi.</p>
                     </div>
                 </div>
-                <br>
-                <div class="w3-container w3-card lighter-background">
-                    <h2>Radionica za decu "Srpska bajka"</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/kids2.png" style="width:100%;max-width:1000px;" alt="calendar">
-                    </div>
-                    <div class="w3-twothird w3-container w3-border w3-border-black">
-                        <p>
-                            25.5.2024 10:00 <br> Radionica za decu u toku koje čitamo srpsku bajku, upoznajemo likove
-                            kao što su zmaj,
-                            aždaja i karakondžula, gledamo ilustracije u predivnoj knjizi "Prognana bića" M. Bodirogića,
-                            učimo nove reči na srpskom, smišljamo i realizujemo u čarobnoj šumi radnju svoje bajke,
-                            koristeći se funkcijama Vladimira Propa.
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <div class="w3-container w3-card lighter-background">
-                    <h2>O Marti Grem i A. Tarkovskom: lekcija + radionica</h2>
-                    <div class="w3-third w3-container w3-padding">
-                        <img src="w3images/cinema.png" style="width:75%;max-width:1000px;" alt="calendar">
-                    </div>
-                    <div class="w3-twothird w3-container w3-border w3-border-black">
-                        <p>
-                            26.5.2024 <br>
-                            Naša prva "lekcija + radionica" posvećena je formi spirale u delima američkog koreografa
-                            Marte Grem i ruskog reditelja Andreja Tarkovskog. Bazira se na članku "Spirala kao forma u
-                            vremenu" objavljenom 2023. u moskovskom naučnom časopisu "Mladi naučnik - perspektivna
-                            nauka". "Lekcija + radionica" je nov format koji se od klasičnog predavanja razlikuje
-                            spontanijim, manje akademskim pristupom i praktičnom primenom izrečenog.</p>
-                        <a class="collapsible w3-center" style="display: block;"><i>Više teksta</i></a>
-                        <p class="content"> U prvih 15-ak
-                            minuta iznosi se srž nečijeg istraživanja i potom se u grupama kroz zadatke i igru "testira"
-                            ono što smo upravo čuli. Ova forma pogodna je za svakog koga zanimaju savremena istraživanja
-                            u umetnosti, nove metode i načini posmatranja ili samo zabavno i interesantno provedeno
-                            vreme u igri.
-                        </p>
-                    </div>
-                </div>
-                <br>
+                <br />
+
+
+
                 <a class="collapsible w3-center w3-card lighter-background w3-padding"
                     style="display: block;">Pogledajte starije događaje</a>
-                <div class=content>
-                    <br>
+
+                <div class="content">&nbsp;
                     <div class="w3-container w3-yellow w3-card w3-center" style="display: block;">
                         <h2>▼ Dnevnik prethodnih događaja ▼</h2>
                     </div>
-                    <br>
+                    &nbsp;
+
+
                     <div class="w3-container w3-card lighter-background">
-                        <h2>Seminar "Menjačnica"</h2>
-                        <div class="w3-third w3-container w3-padding">
-                            <img src="w3images/workshop1.png" style="width:100%;max-width:1000px;" alt="calendar">
-                        </div>
+                        <h2>O Marti Grem i A. Tarkovskom: lekcija + radionica</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/cinema.png"
+                                style="width:75%;max-width:1000px;" /></div>
+
                         <div class="w3-twothird w3-container w3-border w3-border-black">
-                            <p>
-                                11.5.2024 18:00 <br>
-                                Seminar za predavače srpskog jezika kao stranog pod nazivom "Menjačnica" jeste
-                                jedinstveni
-                                događaj tog tipa koji se izdvaja pre svega svojim konceptom. Naime, učešće u seminaru je
-                                besplatno jer je model rada tzv. skill swap: svaki učesnik deli sa kolegama konkretan
-                                gramatički problem sa kojim se susreće u svojoj predavačkoj praksi i u zamenu nudi jedan
-                                svoj "kejs" tj. slučaj iz prakse u kojem je uspešno rešio neki drugi problem. </p>
-                            <a class="collapsible w3-center" style="display: block;"><i>Više teksta</i></a>
-                            <p class="content"> Umesto
-                                finansijske razmene učešće se "plaća" razmenom saveta sa ciljem osnaživanja
-                                kolegijalnosti i
-                                povezivanja sa ostalim profesionalcima iz iste oblasti. U seminaru mogu učestvovati kako
-                                filolozi tako i oni koji nemaju završene akademske studije ali imaju predavačkog
-                                iskustva.
-                                Prijave se šalju na mejl: <a
+                            <p>26.5.2024<br />
+                                Na&scaron;a prva &quot;lekcija + radionica&quot; posvećena je formi spirale u delima
+                                američkog koreografa Marte Grem i ruskog reditelja Andreja Tarkovskog. Bazira se na
+                                članku
+                                &quot;Spirala kao forma u vremenu&quot; objavljenom 2023. u moskovskom naučnom časopisu
+                                &quot;Mladi naučnik - perspektivna nauka&quot;. &quot;Lekcija + radionica&quot; je nov
+                                format koji se od klasičnog predavanja razlikuje spontanijim, manje akademskim pristupom
+                                i
+                                praktičnom primenom izrečenog.</p>
+                            <a class="collapsible w3-center" style="display: block;"><i>Vi&scaron;e teksta</i></a>
+
+                            <p class="content">U prvih 15-ak minuta iznosi se srž nečijeg istraživanja i potom se u
+                                grupama
+                                kroz zadatke i igru &quot;testira&quot; ono &scaron;to smo upravo čuli. Ova forma
+                                pogodna je
+                                za svakog koga zanimaju savremena istraživanja u umetnosti, nove metode i načini
+                                posmatranja
+                                ili samo zabavno i interesantno provedeno vreme u igri.</p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Radionica za decu &quot;Srpska bajka&quot;</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/kids2.png"
+                                style="width:100%;max-width:1000px;" /></div>
+
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>25.5.2024 10:00<br />
+                                Radionica za decu u toku koje čitamo srpsku bajku, upoznajemo likove kao &scaron;to su
+                                zmaj,
+                                aždaja i karakondžula, gledamo ilustracije u predivnoj knjizi &quot;Prognana bića&quot;
+                                M.
+                                Bodirogića, učimo nove reči na srpskom, smi&scaron;ljamo i realizujemo u čarobnoj
+                                &scaron;umi radnju svoje bajke, koristeći se funkcijama Vladimira Propa.</p>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>&Scaron;panski razgovorni klub</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/spanish.jpg"
+                                style="width:100%;max-width:1000px;" /></div>
+
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>18.5.2024 18:00<br />
+                                &Scaron;panski razgovorni klub je prilika da vežbate konverzaciju sa izvornim
+                                govornikom!
+                                Klub vodi Meksikanka Majra koja će vam pomoći da vodite razgovor na svakodnevne teme u
+                                dru&scaron;tvu drugih govornika, uz piće, grickalice i u druželjubivoj atmosferi
+                                na&scaron;eg centra. Tema narednog kluba je &quot;Život u Beogradu - prednosti i
+                                mane&quot;.
+                                Za sva dodatna pitanja možete nam pisati na mejl adresu.</p>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Srpski razgovorni klub</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/bubble.png"
+                                style="width:75%;max-width:1000px;" /></div>
+
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>19.5.2024 16:00<br />
+                                Tematski razgovorni klub na srpskom jeziku odvija se uživo, svake druge nedelje, u
+                                prijatnoj
+                                atmosferi, uz ča&scaron;u vina i sa srpskim gostima. Klub obično traje 3 sata, tokom
+                                kojih
+                                se trudimo da govorimo sve vreme na srpskom (oni koji tek počinju da uče jezik mogu se
+                                slobodno pridružiti, koristeći samo reči koje znaju, to je samo dobar trening i
+                                najvažnije
+                                je da vam bude interesantno). Svaki klub ima svoju temu i za svaki dobijate pitanja za
+                                koja
+                                možete unapred da se pripremite.</p>
+                            <a class="collapsible w3-center" style="display: block;"><i>Vi&scaron;e teksta</i></a>
+
+                            <p class="content">Oni koji imaju decu - mogu doći sa njima, postoji odvojena soba u kojoj
+                                deca
+                                mogu crtati dok se mi družimo. Takođe, možete doći sa svojim kućnim ljubimcem, ako ste
+                                sigurni da nije sklon sukobu sa drugim kućnim ljubimcima. Klub se fokusira na razgovor
+                                (o
+                                različitim dru&scaron;tveno interesantnim i važnim temama, od onih kao &scaron;to su
+                                &quot;&Scaron;ta posetiti u Srbiji?&quot;, &quot;Mentalitet&quot;, &quot;Hrana&quot; do
+                                takvih kao &scaron;to su &quot;Kič&quot;, &quot;Socijalne mreže&quot; i druge). Takođe
+                                uključuje kulturne događaje kao &scaron;to je zajednička poseta bioskopu ili razgovor o
+                                trenutnoj izložbi.</p>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Lekcija prof. Enise Uspenski</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar"
+                                src="w3images/Enisa_Uspenski.jpg" style="width:75%;max-width:1000px;" /></div>
+
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>12.5.2024 16:00<br />
+                                Enisa Uspenski je cenjen sprski prevodilac sa ruskog jezika i redovna profesorka na
+                                Fakultetu dramskih umetnosti u Beogradu. Autorka je brojnih članaka i prevodilac dela A.
+                                S. Pu&scaron;kina, D. Harmsa, P. Florenskog, N. Berđajeva... Uža sfera njenog
+                                naučno-istraživačkog rada je rusistika sa posebnim akcentom na emigrantologiju,
+                                dostojevistiku, rusku dramu, pozori&scaron;te, film i poeziju.</p>
+                        </div>
+                    </div>
+                    &nbsp;
+
+                    <div class="w3-container w3-card lighter-background">
+                        <h2>Seminar &quot;Menjačnica&quot;</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/workshop1.png"
+                                style="width:100%;max-width:1000px;" /></div>
+
+                        <div class="w3-twothird w3-container w3-border w3-border-black">
+                            <p>11.5.2024 18:00<br />
+                                Seminar za predavače srpskog jezika kao stranog pod nazivom &quot;Menjačnica&quot; jeste
+                                jedinstveni događaj tog tipa koji se izdvaja pre svega svojim konceptom. Naime,
+                                uče&scaron;će u seminaru je besplatno jer je model rada tzv. skill swap: svaki učesnik
+                                deli sa kolegama konkretan gramatički problem sa kojim se susreće u svojoj predavačkoj
+                                praksi i u zamenu nudi jedan svoj &quot;kejs&quot; tj. slučaj iz prakse u kojem je
+                                uspe&scaron;no re&scaron;io neki drugi problem.</p>
+                            <a class="collapsible w3-center" style="display: block;"><i>Vi&scaron;e teksta</i></a>
+
+                            <p class="content">Umesto finansijske razmene uče&scaron;će se &quot;plaća&quot; razmenom
+                                saveta sa ciljem osnaživanja kolegijalnosti i povezivanja sa ostalim profesionalcima iz
+                                iste oblasti. U seminaru mogu učestvovati kako filolozi tako i oni koji nemaju
+                                zavr&scaron;ene akademske studije ali imaju predavačkog iskustva. Prijave se
+                                &scaron;alju na mejl: <a
                                     href="mailto:miljana.cosic@kcemigrantka.com">miljana.cosic@kcemigrantka.com</a> sa
-                                naznakom "Prijava za seminar".
-                            </p>
+                                naznakom &quot;Prijava za seminar&quot;.</p>
                         </div>
                     </div>
-                    <br>
+                    &nbsp;
+
                     <div class="w3-container w3-card lighter-background">
-                        <h2>Pozorišno čitanje komada "Božić" autorke Ženje Berkovič.</h2>
-                        <div class="w3-third w3-container w3-padding">
-                            <img src="w3images/event2.jpg" style="width:100%;max-width:1000px;" alt="calendar">
-                        </div>
+                        <h2>Pozori&scaron;no čitanje komada &quot;Božić&quot; autorke Ženje Berkovič</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/event2.jpg"
+                                style="width:100%;max-width:1000px;" /></div>
+
                         <div class="w3-twothird w3-container w3-border w3-border-black">
-                            <p>
-                                10.1.2024. Smestivši biblijski siže u realije prepoznatljive savremenom kontekstu,
-                                autorka se poigrava žanrom, tekstom, ritmom i smislom biblijske priče.
-                            </p>
+                            <p>10.1.2024. Smestiv&scaron;i biblijski siže u realije prepoznatljive savremenom kontekstu,
+                                autorka se poigrava žanrom, tekstom, ritmom i smislom biblijske priče.</p>
                         </div>
                     </div>
-                    <br>
+                    &nbsp;
+
                     <div class="w3-container w3-card lighter-background">
                         <h2>Izložba posvećena poeziji Luke Kurjačkog</h2>
-                        <div class="w3-third w3-container w3-padding">
-                            <img src="w3images/event1.jpg" style="width:100%;max-width:1000px;" alt="calendar">
-                        </div>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/event1.jpg"
+                                style="width:100%;max-width:1000px;" /></div>
+
                         <div class="w3-twothird w3-container w3-border w3-border-black">
-                            <p>
-                                17.12.2023. Luka je bio naš dramaturg i filolog, zaljubljenik u Japan, pesnik i još
-                                mnogo
-                                toga. Izložba je posvećena njegovoj pesmi "Između dva grada" (o odnosu sa Poljskom) i
-                                vezama koje je imao sa Sankt Peterburgom u kojem je jedno vreme živeo i radio kao
-                                profesor jezika.
-                            </p>
+                            <p>17.12.2023. Luka je bio na&scaron; dramaturg i filolog, zaljubljenik u Japan, pesnik i
+                                jo&scaron; mnogo toga. Izložba je posvećena njegovoj pesmi &quot;Između dva grada&quot;
+                                (o odnosu sa Poljskom) i vezama koje je imao sa Sankt Peterburgom u kojem je jedno vreme
+                                živeo i radio kao profesor jezika.</p>
                         </div>
                     </div>
-                    <br>
+                    &nbsp;
+
                     <div class="w3-container w3-card lighter-background">
-                        <h2>Pozorišno čitanje komada "Bugistan" Luke Kurjačkog</h2>
-                        <div class="w3-third w3-container w3-padding">
-                            <img src="w3images/event3.jpg" style="width:100%;max-width:1000px;" alt="calendar">
-                        </div>
+                        <h2>Pozori&scaron;no čitanje komada &quot;Bugistan&quot; Luke Kurjačkog</h2>
+
+                        <div class="w3-third w3-container w3-padding"><img alt="calendar" src="w3images/event3.jpg"
+                                style="width:100%;max-width:1000px;" /></div>
+
                         <div class="w3-twothird w3-container w3-border w3-border-black">
-                            <p>
-                                17.12.2023. Pozorišno čitanje komada "Bugistan" mladog srpskog dramaturga Luke
-                                Kurjačkog. Komad
-                                "Bugistan - operacija raka u tri čina" govori o iskustvu kroz koje je dramaturg sam
-                                prošao - u pitanju je operacija tumora mozga. Sazdavši zaseban jezik, baziran na
-                                stvarnoj afaziji, autor nas vodi kroz ceo jedan izmišljeni svet - Bugistan, u kojem se
-                                ogledamo i preispitujemo.</p>
-                            <a class="collapsible w3-center" style="display: block;"><i>Više teksta</i></a>
-                            <p class="content"> U igranju učestvuju glumci: Anton Smorodin (Kalužski teatar),
-                                Kristina Kozub (Institut M. S. Shchepkina), Kiril Kozub (Teatat Vutkjuka), Olga
-                                Kuvardina (Akademija Sankt Peterburg) Marina Baboshina (Krasnojarski TJUZ), Evgenij
-                                Marder (Krasnojarski TJUZ), Aleksej Dvoeglazov (Aleksandrinski teatar), Ljubica Damčević
-                                - vilonistkinja i performerka Dah teatra
-                            </p>
+                            <p>17.12.2023. Pozori&scaron;no čitanje komada &quot;Bugistan&quot; mladog srpskog
+                                dramaturga Luke Kurjačkog. Komad &quot;Bugistan - operacija raka u tri čina&quot; govori
+                                o iskustvu kroz koje je dramaturg sam pro&scaron;ao - u pitanju je operacija tumora
+                                mozga. Sazdav&scaron;i zaseban jezik, baziran na stvarnoj afaziji, autor nas vodi kroz
+                                ceo jedan izmi&scaron;ljeni svet - Bugistan, u kojem se ogledamo i preispitujemo.</p>
+                            <a class="collapsible w3-center" style="display: block;"><i>Vi&scaron;e teksta</i></a>
+
+                            <p class="content">U igranju učestvuju glumci: Anton Smorodin (Kalužski teatar), Kristina
+                                Kozub (Institut M. S. Shchepkina), Kiril Kozub (Teatat Vutkjuka), Olga Kuvardina
+                                (Akademija Sankt Peterburg) Marina Baboshina (Krasnojarski TJUZ), Evgenij Marder
+                                (Krasnojarski TJUZ), Aleksej Dvoeglazov (Aleksandrinski teatar), Ljubica Damčević -
+                                vilonistkinja i performerka Dah teatra</p>
                         </div>
                     </div>
                 </div>
-                <br>
-
             </div>
         </div>
-
         <!-- Contact/Area Container -->
+
         <div class="w3-container" id="where" style="padding-bottom:32px;">
             <div class="w3-content border-yellow w3-padding" style="max-width:900px">
                 <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-yellow w3-wide"><b>KAKO NAS NAĆI</b></span>
                 </h5>
                 <span class="w3-tag w3-yellow">KONTAKT</span>
+
                 <div class="w3-card lighter-background w3-padding">
                     <p>telegram: <a href="https://t.me/kcemigrantka">@kcemigrantka</a></p>
-                    <p>e-mail: <a href="mailto:miljana.cosic@kcemigrantka.com">miljana.cosic@kcemigrantka.com</a> </p>
+
+                    <p>e-mail: <a href="mailto:miljana.cosic@kcemigrantka.com">miljana.cosic@kcemigrantka.com</a></p>
+
                     <p>facebook: <a
                             href="https://www.facebook.com/people/KC-Emigrantka/61556004083187/">KC-Emigrantka</a></p>
+
                     <p>instagram: <a href="https://www.instagram.com/kcemigrantka/">kcemigrantka</a></p>
                     <!-- <a id="formBtn"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSc0Ydx0w-XyN7BKIPEpku8nT0X5DrDCEaqFkcb36APhhRzdYQ/viewform?embedded=true"
@@ -395,31 +464,28 @@
                 </div>
                 <!-- 
                 <iframe name="myiFrame" hidden="true" src="about:blank" width="100%" height="1100" frameborder="0"
-                    marginheight="0" marginwidth="0">Loading…</iframe><br> -->
-
-                <br>
+                    marginheight="0" marginwidth="0">Loading…</iframe><br> --><br />
                 <span class="w3-tag w3-yellow">LOKACIJA</span>
+
                 <div class="w3-card lighter-background w3-padding">
-                    <p>Centar se nalazi u neposrednoj blizini Vukovog spomenika, u ulici Čelopečka br. 10, <br>interfon
-                        br.
-                        1, od ulaznih vrata zgrade idete samo pravo i videćete tablu sa našim logom na vratima.</p>
+                    <p>Centar se nalazi u neposrednoj blizini Vukovog spomenika, u ulici Čelopečka br. 10,<br />
+                        interfon br. 1, od ulaznih vrata zgrade idete samo pravo i videćete tablu sa na&scaron;im logom
+                        na vratima.</p>
                 </div>
-                <iframe
+                <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    sandbox="allow-scripts"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420.79734491281624!2d20.480168214558987!3d44.805756940051175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7b144c497353%3A0xcdd6b0cad361e0e6!2sKC%20Emigrantka!5e0!3m2!1sen!2srs!4v1713880428284!5m2!1sen!2srs"
-                    width="100%" height="450" style="border:0; padding-bottom: 40px;" allowfullscreen="" loading="lazy"
-                    sandbox="allow-scripts" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    style="border:0; padding-bottom: 40px;" width="100%"></iframe>
             </div>
         </div>
-
         <!-- End page content -->
     </div>
-
     <!-- Footer -->
+
     <footer class="w3-center local-grey w3-padding w3-small">
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p>
+        <p>Powered by <a class="w3-hover-text-green" href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                title="W3.CSS">w3.css</a></p>
     </footer>
-    </div>
     <script src="index.js"></script>
     <script src="index_en.js"></script>
 </body>
